@@ -3,6 +3,7 @@ resource "aws_instance" "default" {
   key_name = var.aws_key_name
   subnet_id = var.aws_subnet_id
   instance_type = "t2.medium" 
+  associate_public_ip_address = true
   tags = {
     Name = "Test"
   }
