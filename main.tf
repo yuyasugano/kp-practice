@@ -16,6 +16,6 @@ module "ec2" {
 
   aws_ami_id = var.aws_ami_id
   aws_key_name = var.aws_key_name
-  aws_subnet_id = "${module.vpc.aws_subnet_id}"
+  aws_subnet_id = module.vpc.aws_subnet_id
 }
 
